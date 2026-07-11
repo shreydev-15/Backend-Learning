@@ -13,14 +13,18 @@
 
 //require is a built-in function to include modules that exist in separate files. It reads a JavaScript file, executes the file, and then proceeds to return the exports object.
 
-const mathfunc = require("./math")
 
-console.log(mathfunc.add(2,3))
-console.log(mathfunc.sub(2,3))
-console.log(mathfunc.mul(2,3))
 
-const info = require("./fruits")
-console.log(info)
+// const mathfunc = require("./math")
+
+// console.log(mathfunc.add(2,3))
+// console.log(mathfunc.sub(2,3))
+// console.log(mathfunc.mul(2,3))
+
+// const info = require("./fruits")
+// console.log(info)
+
+
 
 //npm 
 // Node package manager is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. The registry is accessed via the client, and the available packages can be browsed and searched via the npm website.
@@ -31,3 +35,34 @@ console.log(info)
 // The node_module folder contains every installed dependencies for our project
 
 //package-lock.json it records the exact version of every installed dependency including its sub dependencies and their versions 
+
+
+
+//package.json
+
+//It contains descriptive and functional metadata about a project such as name, version and dependencies. We can install the modules of dependencies if deleted by mistake 
+
+//npm init inside any new directory makes a package.json file including all the metadata asked initially by the gitbash
+
+//If new package is added it will be just added under dependencies of package.json
+
+//All this works as we install npm locally and it is advised to do so in that way only.....we can install dependencies globally as well by running the command npm install -g dependency and npm link dependency
+
+
+
+//We always do one thing either we require all the functions and variables or we import all the same
+
+//Import
+
+//We have to create a package.json and write type: module in it 
+
+//By using import we can selectively import the values and function we need
+
+//Import is async
+
+import {add, PI} from "./math.js"
+console.log(add(5,6))
+console.log(PI)
+
+import {generate} from "random-words"
+console.log(generate())

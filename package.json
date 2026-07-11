@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "For import export",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreydev-15/Backend-Learning-.git"
+  },
+  "author": "Shreyash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreydev-15/Backend-Learning-/issues"
+  },
+  "homepage": "https://github.com/shreydev-15/Backend-Learning-#readme",
+  "type": "module",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
+}
