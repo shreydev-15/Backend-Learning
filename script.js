@@ -31,6 +31,9 @@
 
 // npm is basically a library of packages and packages are a collection of codes that are made by someone else. express and react are also the packages that we'll be using in the future. It is also a command line tool
 
+//NPM stands for node package manager and NPX stands for node package executor
+
+
 // node modules 
 // The node_module folder contains every installed dependencies for our project
 
