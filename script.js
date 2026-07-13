@@ -65,4 +65,19 @@ console.log(add(5,6))
 console.log(PI)
 
 import {generate} from "random-words"
-console.log(generate())
+console.log(generate())  
+
+//Module
+//Built in functionalisties provided by node js 
+
+
+//Creating a server by node 
+
+const http = require('http');
+const server =  http.createServer((req, res)=>{
+    res.end("Respond has been successfully sent")
+})  //Server create ho gaya hai
+
+server.listen(3000, ()=>{
+    console.log("Server is listening")
+})
