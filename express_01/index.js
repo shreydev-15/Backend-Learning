@@ -5,7 +5,7 @@
 // Express is used for server side programming in recieving the request and sending out the response. It also parse the requests. Finally to match response with the routes.....Usually installed via npm
 
 
-import express from 'express'
+const express = require('express')
 
 const app = express()
 // console.dir(app)
@@ -64,7 +64,9 @@ app.post("/", (req, res)=>{
 
 //http is text based but so it could be understand by all servers...express parse the text based into object based so that js can understand
 
-//Nodemon is the package we use for restarting our server easily instead of doing it manually
+//Nodemon is the package we use for restarting our server easily instead of doing it manually we use npx instead of npm
+
+//NPM stands for node package manager and NPX stands for node package executor
 
 //Path parameters are treated as variables as we can't really deifine each and every routes for usernames and IDs like instagram does 
 
