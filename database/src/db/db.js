@@ -4,10 +4,11 @@ const mongoose = require('mongoose')
 //in db.js we'll be writing how server be connected to the database 
 
 function connectToDB(){
-    mongoose.connect("mongodb+srv://raishreyash1519_db_user:OLEawMnSIUZ3u69I@shreyash.p4cp1nv.mongodb.net/database")
+    mongoose.connect("mongodb+srv://raishreyash1519_db_user:OLEawMnSIUZ3u69I@shreyash.p4cp1nv.mongodb.net/Shrey")
     .then(()=>{
         console.log("Connected to DB")
     })
 }
 
 module.exports = connectToDB
+
