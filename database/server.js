@@ -17,7 +17,7 @@ app.get('/', (req, res)=>{
 
 app.post('/notes', async (req, res)=>{
     const {title, content} = req.body;
-   await noteModel.create({
+    await noteModel.create({
         title,content
     })
     res.send({
